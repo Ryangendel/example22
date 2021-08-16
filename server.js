@@ -3,7 +3,7 @@ var fs = require("fs")
 var app = express()
 var bodyParser = require("body-parser")
 
-var PORT = process.env.PORT || 3000
+var PORT = 3000
 
 var data= [{name:"Ryan",phone:"555-555-5555", address:"123 main street"},
 {name:"jeff",phone:"666666666", address:"1234main street"},
@@ -16,6 +16,7 @@ function jeff(req,res,next){
 console.log("------")
 console.log(__dirname)
 console.log("------")
+
 
 app.use(jeff)
 
